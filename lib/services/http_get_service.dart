@@ -16,9 +16,9 @@ class HttpGetApiService {
       });
 
       if (response.statusCode == 200) {
-        log("response.statusCode is ${response.statusCode}");
+        // log("response.statusCode is ${response.statusCode}");
 
-        log("response.data is ${response.body}");
+        // log("response.data is ${response.body}");
         datas = responseModelFromJson(response.body);
         return datas;
       }

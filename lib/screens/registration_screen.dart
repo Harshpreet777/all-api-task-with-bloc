@@ -1,8 +1,10 @@
+import 'package:bloc_api_task/bloc/radio_bloc.dart';
 import 'package:bloc_api_task/models/request_model.dart';
 import 'package:bloc_api_task/screens/user_details.dart';
 import 'package:bloc_api_task/services/http_post_service.dart';
 import 'package:bloc_api_task/util/color_constant.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
@@ -20,6 +22,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   bool? isEmailValid = true;
   String gender = "male";
   String status = "active";
+
+  void changeOption(GenderOption? newValue, BuildContext context) {
+    if (newValue != null) {
+      context.read<RadioCubit>().changeOption(newValue);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

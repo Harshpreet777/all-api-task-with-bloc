@@ -14,7 +14,7 @@ class DeleteApi {
           });
 
       if (response.statusCode == 200) {
-        log("response.data is ${response.body}");
+        // log("response.data is ${response.body}");
         return true;
       } else {
         return false;

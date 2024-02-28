@@ -32,12 +32,12 @@ class _UserDetailScreenState extends State<UserDetailScreen> {
     debugPrint('Build Call');
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: const Icon(Icons.arrow_back)),
-      ),
+          // leading: IconButton(
+          //     onPressed: () {
+          //       // Navigator.pop(context);
+          //     },
+          //     icon: const Icon(Icons.arrow_back)),
+          ),
       body: SingleChildScrollView(
         child: Column(
           children: [

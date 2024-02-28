@@ -15,7 +15,7 @@ class UpdateApi {
                 "Bearer c9deacfd00d58aef0219b783eebff9cbac46821034ee07d465a2424b341c7725"
           });
       if (response.statusCode == 200) {
-        log("response.data is ${response.body}");
+        // log("response.data is ${response.body}");
         return true;
       } else {
         return false;

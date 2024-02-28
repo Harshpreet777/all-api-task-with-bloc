@@ -1,5 +1,5 @@
 import 'package:bloc_api_task/bloc/list_bloc.dart';
-import 'package:bloc_api_task/screens/user_details.dart';
+import 'package:bloc_api_task/screens/welcome_screen.dart';
 import 'package:bloc_api_task/services/http_get_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const UserDetailScreen(),
+        home: const WelcomeScreen(),
       ),
     );
   }
